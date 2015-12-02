@@ -1,0 +1,13 @@
+sudo: required
+
+services:
+  - docker
+
+script:
+  - docker build -t kenjones/nodejs:4 -f Dockerfile.base .
+  - docker build -t kenjones/nodejs-mocha -f Dockerfile.mocha .
+  - docker build -t kenjones/nodejs-dev -f Dockerfile.dev .
+  - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+  - docker push kenjones/nodejs:4
+  - docker push kenjones/nodejs-mocha
+  - docker push kenjones/nodejs-dev

@@ -1,0 +1,3 @@
+FROM kenjones/nodejs:4
+
+RUN npm install --quiet -g istanbul mocha
