@@ -4,6 +4,7 @@ services:
   - docker
 
 script:
+  - docker pull node:4
   - docker build -t kenjones/nodejs:4 -f Dockerfile.base .
   - docker build -t kenjones/nodejs-mocha -f Dockerfile.mocha .
   - docker build -t kenjones/nodejs-dev -f Dockerfile.dev .
