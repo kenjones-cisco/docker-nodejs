@@ -9,4 +9,6 @@ A couple of useful images to include mocha globally installed and a development 
 - kenjones/nodejs:4
 - kenjones/nodejs-mocha
 - kenjones/nodejs-dev
+- kenjones/nodejs:4-slim
+- kenjones/nodejs:4-slim-onbuild
 
