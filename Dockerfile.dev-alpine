@@ -1,0 +1,3 @@
+FROM kenjones/nodejs:4-alpine
+
+RUN npm install --quiet -g istanbul yo gulp pm2
