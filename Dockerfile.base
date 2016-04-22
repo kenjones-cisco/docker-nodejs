@@ -10,4 +10,3 @@ RUN groupadd -g 500 -r nodejs \
     && chown -R appy /app
 
 WORKDIR /app
-USER appy

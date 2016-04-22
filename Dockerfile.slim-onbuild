@@ -4,4 +4,6 @@ ONBUILD COPY package.json /app/
 ONBUILD RUN npm install
 ONBUILD COPY . /app
 
+USER appy
+
 CMD [ "npm", "start" ]
