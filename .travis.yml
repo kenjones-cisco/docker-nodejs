@@ -11,7 +11,7 @@ script:
   - docker tag kenjones/nodejs-dev kenjones/nodejs:4-dev
   - docker build -t kenjones/nodejs:4-slim -f Dockerfile.slim .
   - docker build -t kenjones/nodejs:4-slim-onbuild -f Dockerfile.slim-onbuild .
-  - docker pull alpine:3.3
+  - docker pull alpine:3.4
   - docker build -t nodejs-alpine:4 -f Dockerfile.node-alpine .
   - docker build -t kenjones/nodejs:4-alpine -f Dockerfile.base-alpine .
   - docker build -t kenjones/nodejs:4-dev-alpine -f Dockerfile.dev-alpine .
